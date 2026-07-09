@@ -1,2 +1,120 @@
-# estrategia-pirpen
-Implementación en MATLAB de la estrategia de Ponderación Inversa al Riesgo Penalizada (PIR-PEN) para selección de portafolios.
+# Estrategia de Ponderación Inversa al Riesgo Penalizada (PIR-PEN)
+
+Este repositorio contiene la implementación en **MATLAB** de la estrategia de **Ponderación Inversa al Riesgo Penalizada (PIR-PEN)** propuesta en el trabajo de grado de la **Maestría en Estadística Aplicada** de la Universidad de Nariño.
+
+La metodología propone una variante de la estrategia clásica de Ponderación Inversa al Riesgo (PIR), incorporando un parámetro de penalización que se calibra mediante la maximización del índice de Sharpe y un control sobre la concentración del portafolio utilizando el coeficiente de Gini.
+
+Además de la implementación del algoritmo, el repositorio incluye los scripts necesarios para reproducir los experimentos computacionales y las tablas presentadas en la investigación.
+
+---
+
+# Estructura del repositorio
+
+```
+.
+├── Codigo
+│   ├── Funciones
+│   │   ├── pirpen.m
+│   │   ├── turnover.m
+│   │   ├── gini_index.m
+│   │   └── calcular_mad.m
+│   │
+│   └── Evaluacion
+│       ├── evaluacion_sharpe_sin_costos.m
+│       └── evaluacion_turnover_sharpe.m
+│
+├── Datos
+│   ├── data5.mat
+│   ├── data250.mat
+│   └── data500.mat
+│
+├── Resultados
+│
+└── README.md
+```
+
+---
+
+# Requisitos
+
+El código fue desarrollado en **MATLAB**.
+
+Se requiere:
+
+- MATLAB R2021a o superior (recomendado).
+- Optimization Toolbox.
+
+La Optimization Toolbox es necesaria porque la implementación de las estrategias **Media-Varianza** y **Mínima Varianza** utiliza la función
+
+```matlab
+quadprog
+```
+
+para resolver los problemas de optimización cuadrática.
+
+No se requieren paquetes adicionales para ejecutar las funciones PIR, PIR-PEN, el cálculo del coeficiente de Gini ni el turnover.
+
+---
+
+# Funciones implementadas
+
+| Función | Descripción |
+|----------|-------------|
+| **pirpen.m** | Implementa la estrategia de Ponderación Inversa al Riesgo Penalizada (PIR-PEN). |
+| **turnover.m** | Calcula el turnover promedio y los retornos netos considerando costos de transacción. |
+| **gini_index.m** | Calcula el coeficiente de Gini asociado a un vector de pesos. |
+| **calcular_mad.m** | Calcula la desviación absoluta mediana (MAD). |
+
+---
+
+# Scripts de evaluación
+
+El repositorio incluye dos scripts principales para reproducir los resultados de la tesis.
+
+| Script | Descripción |
+|---------|-------------|
+| **evaluacion_sharpe_sin_costos.m** | Calcula el índice de Sharpe para todas las estrategias utilizando distintos tamaños de ventana sin considerar costos de transacción. |
+| **evaluacion_turnover_sharpe.m** | Calcula el turnover promedio y el índice de Sharpe considerando costos de transacción. |
+
+Ambos scripts generan automáticamente las tablas en formato LaTeX utilizadas en el documento de la tesis.
+
+---
+
+# Datos
+
+La carpeta **Datos** contiene los conjuntos de datos empleados en los experimentos computacionales.
+
+Los archivos deben permanecer dentro de esta carpeta para ejecutar correctamente los scripts de evaluación.
+
+---
+
+# Reproducibilidad
+
+El objetivo de este repositorio es facilitar la reproducción de los resultados presentados en el trabajo de grado.
+
+Se incluyen:
+
+- El código fuente de los algoritmos implementados.
+- Los conjuntos de datos utilizados en los experimentos.
+- Los scripts de evaluación.
+- La generación automática de las tablas en formato LaTeX.
+
+---
+
+# Trabajo de grado asociado
+
+**Estrategia de Ponderación Inversa al Riesgo Penalizada para la Selección de Portafolios en Alta Dimensión**
+
+Maestría en Estadística Aplicada
+
+Universidad de Nariño
+
+---
+
+# Autor
+
+**Edwin Andrés Bolaños De La Cruz**
+
+Maestría en Estadística Aplicada
+
+Universidad de Nariño
