@@ -23,7 +23,7 @@ tic
 
 %% Carga de los datos
 
-%load(fullfile('Datos','data5.mat'));
+load(fullfile('Datos','data5.mat'));
 datos = data5 / 100;
 
 [numero_periodos, numero_activos] = size(datos);
