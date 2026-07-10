@@ -13,31 +13,28 @@ Además de la implementación del algoritmo, el repositorio incluye los scripts 
 
 ```
 .
-├── Codigo
-│   ├── Funciones
-│   │   ├── pirpen.m
-│   │   ├── turnover.m
-│   │   ├── gini_index.m
-│   │   └── calcular_mad.m
-│   │
-│   └── Evaluacion
-│       ├── evaluacion_sharpe_sin_costos.m
-│       └── evaluacion_turnover_sharpe.m
-│
+├── Funciones
+│   ├── pirpen.m
+│   ├── turnover.m
+│   ├── gini_index.m
+│   └── calcular_mad.m
+│   
+├── Evaluacion
+|   ├──evaluacion_sharpe_sin_costos.m
+|   └── evaluacion_turnover_sharpe.m
+|
 ├── Datos
-│   ├── data5.mat
-    ├── data10.mat
-    ├── data12.mat
-    ├── data17.mat
-    ├── data30.mat
-    ├── data31.mat
-    ├── data40.mat
-│   ├── data250.mat
-│   └── data500.mat
-│
-├── Resultados
-│
-└── README.md
+|   ├── data5.mat
+|   ├── data10.mat
+|   ├── data12.mat
+|   ├── data17.mat
+|   ├── data30.mat
+|   ├── data31.mat
+|   ├── data40.mat
+|   ├── data250.mat
+|   └── data500.mat        │
+|
+├──README.md
 ```
 
 ---
