@@ -19,9 +19,21 @@ close all
 clc
 tic
 
-%% Carga de los datos
 
-load(fullfile('Datos','data5.mat'));
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Configuración de rutas
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ruta_script = fileparts(mfilename('fullpath'));
+
+addpath(fullfile(ruta_script,'..','Funciones'));
+
+ruta_datos = fullfile(ruta_script,'..','Datos');
+
+%% Carga de datos
+
+load(fullfile(ruta_datos,'data5.mat'));
+
 
 datos = data5/100;
 
