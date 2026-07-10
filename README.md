@@ -56,7 +56,7 @@ quadprog
 
 para resolver los problemas de optimización cuadrática.
 
-No se requieren paquetes adicionales para ejecutar las funciones PIR, PIR-PEN, el cálculo del coeficiente de Gini ni el turnover.
+No se requieren paquetes adicionales para ejecutar las funciones necesarias.
 
 ---
 
@@ -91,6 +91,13 @@ La carpeta **Datos** contiene los conjuntos de datos empleados en los experiment
 Los archivos deben permanecer dentro de esta carpeta para ejecutar correctamente los scripts de evaluación.
 
 ---
+# Ejecución
+
+Para ejecutar los scripts basta con abrir MATLAB y ejecutar cualquiera de los archivos contenidos en la carpeta `Evaluacion`.
+
+Los scripts configuran automáticamente las rutas necesarias para acceder a las funciones y a los conjuntos de datos del repositorio, por lo que no es necesario modificar las rutas manualmente.
+
+---
 
 # Reproducibilidad
 
@@ -105,19 +112,9 @@ Se incluyen:
 
 ---
 
-# Trabajo de grado asociado
-
-**Estrategia de Ponderación Inversa al Riesgo Penalizada para la Selección de Portafolios en Alta Dimensión**
-
-Maestría en Estadística Aplicada
-
-Universidad de Nariño
-
----
-
 # Autor
 
-**Edwin Andrés Bolaños De La Cruz**
+**Edwin Andrés Bolaños de la Cruz**
 
 Maestría en Estadística Aplicada
 
