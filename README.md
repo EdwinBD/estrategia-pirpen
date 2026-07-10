@@ -1,10 +1,11 @@
-# Estrategia de Ponderación Inversa al Riesgo Penalizada (PIR-PEN)
+# Estrategia de Ponderación Inversa al Riesgo Penalizada
 
-Este repositorio contiene la implementación en **MATLAB** de la estrategia de **Ponderación Inversa al Riesgo Penalizada (PIR-PEN)** propuesta en el trabajo de grado de la **Maestría en Estadística Aplicada** de la Universidad de Nariño.
+Este repositorio contiene la implementación en **MATLAB** de las estrategias de **Ponderación Inversa al Riesgo Penalizada** propuesta en el trabajo de grado denominado **Calibración del parámetro de penalización de la volatilidad en selección de portafolios de ponderación inversa alriesgo**  presentado como requisito parcial para optar al título de
+Magister en Estadística Aplicada  de la Universidad de Nariño.
 
 La metodología propone una variante de la estrategia clásica de Ponderación Inversa al Riesgo (PIR), incorporando un parámetro de penalización que se calibra mediante la maximización del índice de Sharpe y un control sobre la concentración del portafolio utilizando el coeficiente de Gini.
 
-Además de la implementación del algoritmo, el repositorio incluye los scripts necesarios para reproducir los experimentos computacionales y las tablas presentadas en la investigación.
+Además de la implementación del algoritmo, el repositorio incluye los scripts necesarios para reproducir los experimentos computacionales y las tablas presentadas en el trabajo.
 
 ---
 
@@ -25,6 +26,12 @@ Además de la implementación del algoritmo, el repositorio incluye los scripts 
 │
 ├── Datos
 │   ├── data5.mat
+    ├── data10.mat
+    ├── data12.mat
+    ├── data17.mat
+    ├── data30.mat
+    ├── data31.mat
+    ├── data40.mat
 │   ├── data250.mat
 │   └── data500.mat
 │
@@ -41,10 +48,10 @@ El código fue desarrollado en **MATLAB**.
 
 Se requiere:
 
-- MATLAB R2021a o superior (recomendado).
+- MATLAB R2023b o superior.
 - Optimization Toolbox.
 
-La Optimization Toolbox es necesaria porque la implementación de las estrategias **Media-Varianza** y **Mínima Varianza** utiliza la función
+Optimization Toolbox es necesaria porque la implementación de las estrategias **Media-Varianza** y **Mínima Varianza** utiliza la función
 
 ```matlab
 quadprog
