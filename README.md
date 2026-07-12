@@ -97,6 +97,8 @@ Para ejecutar los scripts basta con abrir MATLAB y ejecutar cualquiera de los ar
 
 Los scripts configuran automáticamente las rutas necesarias para acceder a las funciones y a los conjuntos de datos del repositorio, por lo que no es necesario modificar las rutas manualmente.
 
+El tiempo de ejecución de los scripts varía segun el conjunto de datos empleado; además, se debe considerar que se están ejecutando todas las estrategias analizadas y para una lista considerable de diferentes tamaños de ventana.
+
 ---
 
 # Reproducibilidad
